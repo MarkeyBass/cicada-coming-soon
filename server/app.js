@@ -7,10 +7,6 @@ const app = express();
 
 app.use(express.static('public'))
 
-app.get('/',(req, res) => {
-    res.send('Comming Soon');
-})
-
-app.listen(process.env.PORT || 8800, () => {
+app.listen(process.env.PORT || 8800, 'localhost',() => {
   console.log(`Connected to Server on ${process.env.PORT}...`.blue);
 });
