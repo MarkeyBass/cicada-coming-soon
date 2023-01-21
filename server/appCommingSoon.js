@@ -7,6 +7,6 @@ const app = express();
 
 app.use(express.static('public'))
 
-app.listen(process.env.PORT || 8800, 'localhost',() => {
+app.listen(process.env.PORT || 8806, 'localhost',() => {
   console.log(`Connected to Server on ${process.env.PORT}...`.blue);
 });
